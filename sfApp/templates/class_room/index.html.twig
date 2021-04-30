@@ -3,7 +3,7 @@
 {% block title %}ClassRoom index{% endblock %}
 
 {% block body %}
-    <h1>ClassRoom index</h1>
+    <h1 class="text-center m-4 text-secondary">CLASS ROOMS</h1>
 
     <table class="table">
         <thead>
@@ -11,7 +11,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Location</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -21,8 +21,8 @@
                 <td>{{ class_room.name }}</td>
                 <td>{{ class_room.location }}</td>
                 <td>
-                    <a href="{{ path('class_room_show', {'id': class_room.id}) }}">show</a>
-                    <a href="{{ path('class_room_edit', {'id': class_room.id}) }}">edit</a>
+                    <a class="btn btn-success m-2" href="{{ path('class_room_show', {'id': class_room.id}) }}">show</a>
+                    <a class="btn btn-warning m-2" href="{{ path('class_room_edit', {'id': class_room.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('class_room_new') }}">Create new</a>
+    <a class="btn btn-primary m-2" href="{{ path('class_room_new') }}">Create new</a>
 {% endblock %}

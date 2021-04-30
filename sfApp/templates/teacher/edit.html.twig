@@ -3,11 +3,11 @@
 {% block title %}Edit Teacher{% endblock %}
 
 {% block body %}
-    <h1>Edit Teacher</h1>
+    <h1 class="text-center m-4 text-secondary font-italic">Edit Teacher</h1>
 
     {{ include('teacher/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('teacher_index') }}">back to list</a>
+    <a class="btn btn-primary float-start m-3 d-inline-block" href="{{ path('teacher_index') }}">back to list</a>
 
     {{ include('teacher/_delete_form.html.twig') }}
 {% endblock %}

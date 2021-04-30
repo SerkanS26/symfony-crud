@@ -1,7 +1,28 @@
-{{ form_start(form) }}
-<div class="form-control">
-    {{ form_widget(form) }}
-    <button class="btn btn-warning m-2">{{ button_label|default('Save') }}</button>
-</div>
 
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-warning  m-3 d-inline-block float-end">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
+
+{#{{ form_start(form) }}#}
+{#<div class="form-group">#}
+{#    {{ form_label(form.FirstName)}}#}
+{#    {{ form_widget(form.FirstName, {"attr":{ "class":"form-control"}} ) }}#}
+
+{#    {{ form_label(form.LastName)}}#}
+{#    {{ form_widget(form.LastName, {"attr":{ "class":"form-control"}} ) }}#}
+
+{#    {{ form_label(form.Email)}}#}
+{#    {{ form_widget(form.Email, {"attr":{ "class":"form-control"}} ) }}#}
+
+{#    {{ form_label(form.Class)}}#}
+{#    {{ form_widget(form.Class, {"attr":{ "class":"form-control"}} ) }}#}
+
+{#</div>#}
+{#<button class="btn btn-warning m-2">{{ button_label|default('Save') }}</button>#}
+
+{#{{ form_end(form) }}#}
+
+
+
+

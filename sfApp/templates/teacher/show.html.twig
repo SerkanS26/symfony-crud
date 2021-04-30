@@ -3,7 +3,7 @@
 {% block title %}Teacher{% endblock %}
 
 {% block body %}
-    <h1>Teacher</h1>
+    <h1 class="text-center m-4 text-secondary font-italic">Teacher</h1>
 
     <table class="table">
         <tbody>
@@ -22,9 +22,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('teacher_index') }}">back to list</a>
+    <a class="btn btn-primary m-2" href="{{ path('teacher_index') }}">back to list</a>
 
-    <a href="{{ path('teacher_edit', {'id': teacher.id}) }}">edit</a>
+    <a class="btn btn-warning m-2" href="{{ path('teacher_edit', {'id': teacher.id}) }}">edit</a>
 
     {{ include('teacher/_delete_form.html.twig') }}
 {% endblock %}
